@@ -1,0 +1,229 @@
+/* переменные*/
+:root {
+  --text-main-color: #757575;
+  --title-main-color: #212121;
+  --accent-color: #2196f3;
+  --background-main-color: #ffffff;
+  --background-secondary-color: #2f303a;
+  --button-background-color: #2196f3;
+}
+
+/* преобладающие стили для страницы */
+body {
+  color: var(--text-main-color);
+  background-color: var(--background-main-color);
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  /* font-style: normal; */
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* класс для отключения точек в ul-списке */
+.list {
+  list-style: none;
+}
+/* класс для отключения подчеркивания стилей */
+.link,
+.link1 {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* стили лого */
+.logo {
+  font-family: Raleway, sans-serif;
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-web {
+  color: #292929;
+}
+
+/* стили навигации */
+.site-nav .link {
+  color: var(--title-main-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/* єффект нахождения на текущей странице */
+.current {
+  color: var(--accent-color);
+}
+
+/* стили e-mail_telephone в header*/
+.e-mail-tel .link1 {
+  color: var(--text-main-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.e-mail-tel .link1:hover,
+.e-mail-tel .link1:focus {
+  color: var(--accent-color);
+}
+
+/* стили hero */
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bgcolor-section {
+  background-color: #2f303a;
+}
+
+.button-hero {
+  color: #ffffff;
+  background-color: var(--button-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  color: #2f303a;
+}
+
+/* стили заголовков секции ПРЕИМУЩЕСТВА */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-discription {
+  color: var(--title-main-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* стили описания ПРЕИМУЩЕСТВА */
+.discription {
+  color: var(--text-main-color);
+  line-height: 1.71;
+}
+
+/* стили заголовков секции 3,4 */
+.title-our-work {
+  color: var(--title-main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* стили заголовков персонала */
+.team-list {
+  color: var(--title-main-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* стили списка профессий персонала */
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* стили адреса футера */
+
+.logo-web-footer {
+  color: #ffffff;
+}
+
+.footer-adress {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-mail-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-adress:focus {
+  color: var(--accent-color);
+}
+
+.footer-mail-tel:hover,
+.footer-mail-tel:focus {
+  color: var(--accent-color);
+}
+
+/* стили кнопок меню портфолио */
+.button-portfolio-menu {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button-portfolio-menu:hover,
+.button-portfolio-menu:focus {
+  color: #ffffff;
+  background-color: var(--button-background-color);
+}
+
+/* стили заголовков в портфолио */
+.title-list-portfolio {
+  color: var(--title-main-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* стили названия типа проектов в портфолио */
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* активность кнопки в меню портфолио */
+.active {
+  background-color: var(--button-background-color);
+  color: #ffffff;
+}
