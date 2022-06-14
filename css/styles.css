@@ -379,9 +379,9 @@ body {
   background-color: var(--button-background-color);
 }
 
-/* .portfolio .item {
+.portfolio .item {
   display: flex;
-} */
+}
 
 /* стили заголовков в портфолио */
 .title-list-portfolio {
