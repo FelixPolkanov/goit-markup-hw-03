@@ -37,6 +37,8 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
   outline: 2px solid tomato;
 }
@@ -173,6 +175,7 @@ body {
   padding-top: 94px;
   padding-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
   justify-content: center;
 }
 
@@ -233,10 +236,10 @@ body {
   letter-spacing: 0.03em;
 }
 .container-our-work {
-  box-sizing: border-box;
+  display: flex;
   margin-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .container-our-work .item {
   display: flex;
@@ -252,8 +255,8 @@ body {
   box-sizing: border-box;
   padding-top: 0;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .container-team .item {
   margin-right: 30px;
@@ -298,8 +301,10 @@ body {
 .logo-web-footer {
   color: #ffffff;
 }
+
 .container-adress-footer .item {
   display: flex;
+
   padding-left: 0;
   margin-bottom: 9px;
   background-color: teal;
@@ -311,6 +316,8 @@ body {
 .container-adress-footer {
   margin-bottom: 60px;
   padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 .footer-adress {
   color: #ffffff;
