@@ -32,18 +32,26 @@ body {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
+/* общий класс для всех секций */
 .container {
   display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  border-bottom: 1px solid #ececec;
+  outline: 2px solid tomato;
 }
 
+.button {
+  cursor: pointer;
+}
+
+/* доп/настройки секции хедера */
+.container-header {
+  align-items: center;
+}
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 /* стили лого */
 
 .logo {
@@ -160,16 +168,12 @@ button {
   color: #2f303a;
 }
 
-/* стили заголовков секции ПРЕИМУЩЕСТВА */
-
+/* доп/настройки секции ПРЕИМУЩЕСТВА */
 .container-discription {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
-  justify-content: center;
-  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 0;
   padding-left: 0;
+  justify-content: center;
 }
 
 .container-discription .item {
@@ -182,6 +186,7 @@ button {
   margin-right: 0;
 }
 
+/* стили заголовков секции ПРЕИМУЩЕСТВА */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -214,9 +219,12 @@ button {
 }
 
 /* стили заголовков секции 3,4 */
-.title-our-work {
+.title-our-work,
+.title-team {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
   color: var(--title-main-color);
   font-weight: 700;
   font-size: 36px;
@@ -225,16 +233,11 @@ button {
   letter-spacing: 0.03em;
 }
 .container-our-work {
-  display: flex;
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 188px;
+  margin-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
 }
-
 .container-our-work .item {
   display: flex;
   margin-right: 30px;
@@ -242,17 +245,15 @@ button {
 .container-our-work .item:last-child {
   margin-right: 0;
 }
-/* стили заголовков персонала */
 
+/* доп/настройки секции персонала */
 .container-team {
   display: flex;
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
+  padding-top: 0;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
 }
 .container-team .item {
   margin-right: 30px;
@@ -261,6 +262,7 @@ button {
   margin-right: 0;
 }
 
+/* стили заголовков персонала */
 .team-list {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -283,7 +285,12 @@ button {
 }
 
 /* стили адреса футера */
-
+.container-logo-footer {
+  display: flex;
+  margin-bottom: 0;
+  padding-top: 60px;
+  background-color: tomato;
+}
 .bgcolor-section {
   background-color: #2f303a;
 }
@@ -291,7 +298,20 @@ button {
 .logo-web-footer {
   color: #ffffff;
 }
+.container-adress-footer .item {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 9px;
+  background-color: teal;
+}
 
+.container-adress-footer .item:last-child {
+  margin-bottom: 0;
+}
+.container-adress-footer {
+  margin-bottom: 60px;
+  padding-left: 0;
+}
 .footer-adress {
   color: #ffffff;
   font-style: normal;
@@ -320,7 +340,23 @@ button {
 }
 
 /* стили кнопок меню портфолио */
+.porfolio-menu-container {
+  display: flex;
+  margin-left: 100px;
+  padding-left: 0;
+  outline: 2px solid teal;
+}
+
+.porfolio-menu-container .item {
+  margin-right: 8px;
+}
+.porfolio-menu-container .item:last-child {
+  margin-right: 0;
+}
 .button-portfolio-menu {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0 solid #f5f4fa;
   font-family: Roboto, sans-serif;
   color: #212121;
   background-color: #f5f4fa;
@@ -335,6 +371,10 @@ button {
   color: #ffffff;
   background-color: var(--button-background-color);
 }
+
+/* .portfolio .item {
+  display: flex;
+} */
 
 /* стили заголовков в портфолио */
 .title-list-portfolio {
