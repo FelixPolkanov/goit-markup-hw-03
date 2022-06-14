@@ -301,7 +301,7 @@ body {
 .logo-web-footer {
   color: #ffffff;
 }
-
+/* контейнер для футера */
 .container-adress-footer .item {
   display: flex;
 
