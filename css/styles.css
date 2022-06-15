@@ -6,6 +6,7 @@
   --background-main-color: #ffffff;
   --background-secondary-color: #2f303a;
   --button-background-color: #2196f3;
+  --portfolio-list-gap: 30px;
 }
 
 /* преобладающие стили для страницы */
@@ -14,7 +15,6 @@ body {
   background-color: var(--background-main-color);
   font-weight: 400;
   font-family: Roboto, sans-serif;
-  /* font-style: normal; */
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -32,15 +32,19 @@ body {
   text-decoration: none;
 }
 
+/* удаление зазора снизу картинoк */
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* общий класс для всех секций */
 .container {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 .button {
@@ -49,13 +53,15 @@ body {
 
 /* доп/настройки секции хедера */
 .container-header {
+  display: flex;
   align-items: center;
 }
+
 .header-border {
   border-bottom: 1px solid #ececec;
 }
-/* стили лого */
 
+/* стили лого */
 .logo {
   display: flex;
   font-family: Raleway, sans-serif;
@@ -102,6 +108,7 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* єффект нахождения на текущей странице */
 .current {
   color: var(--accent-color);
@@ -138,7 +145,6 @@ body {
 }
 
 /* стили hero */
-
 .hero {
   text-align: center;
   background-color: #2f303a;
@@ -172,6 +178,7 @@ body {
 
 /* доп/настройки секции ПРЕИМУЩЕСТВА */
 .container-discription {
+  display: flex;
   padding-top: 94px;
   padding-bottom: 0;
   padding-left: 0;
@@ -237,7 +244,7 @@ body {
 }
 .container-our-work {
   display: flex;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -292,7 +299,7 @@ body {
   display: flex;
   margin-bottom: 0;
   padding-top: 60px;
-  background-color: tomato;
+  margin-bottom: 20px;
 }
 .bgcolor-section {
   background-color: #2f303a;
@@ -301,24 +308,22 @@ body {
 .logo-web-footer {
   color: #ffffff;
 }
+
 /* контейнер для футера */
 .container-adress-footer .item {
   display: flex;
-
   padding-left: 0;
   margin-bottom: 9px;
-  background-color: teal;
 }
 
 .container-adress-footer .item:last-child {
   margin-bottom: 0;
 }
 .container-adress-footer {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-left: 0;
-  margin: 0;
-  padding: 0;
 }
+
 .footer-adress {
   color: #ffffff;
   font-style: normal;
@@ -349,9 +354,10 @@ body {
 /* стили кнопок меню портфолио */
 .porfolio-menu-container {
   display: flex;
-  margin-left: 100px;
   padding-left: 0;
-  outline: 2px solid teal;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
 }
 
 .porfolio-menu-container .item {
@@ -379,12 +385,29 @@ body {
   background-color: var(--button-background-color);
 }
 
-.portfolio .item {
+.portfolio-container {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 94px;
+  margin-left: calc(-1 * var(--portfolio-list-gap));
+  margin-top: calc(-1 * var(--portfolio-list-gap));
+}
+
+.portfolio-container > .item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: var(--portfolio-list-gap);
+  margin-top: var(--portfolio-list-gap);
+}
+.portfolio-items-set {
+  padding: 20px 24px;
 }
 
 /* стили заголовков в портфолио */
 .title-list-portfolio {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-main-color);
   font-weight: 700;
   font-size: 18px;
@@ -394,6 +417,8 @@ body {
 
 /* стили названия типа проектов в портфолио */
 .project-type {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.88;
 }
